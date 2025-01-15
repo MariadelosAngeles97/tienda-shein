@@ -1,0 +1,136 @@
+/* Cart.css */
+
+/* El ícono del carrito en la esquina */
+.cart-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff6347; /* Color rojo */
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: white;
+  }
+  
+  /* El contador del carrito */
+  .cart-count {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: red;
+    color: white;
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 12px;
+  }
+  
+  /* Modal del carrito */
+  .cart-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .cart-modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .cart-modal-content ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .cart-modal-content li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .cart-modal-content button {
+    background-color: #ff6347;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  
+  .cart-modal-content button:hover {
+    background-color: #ff4500;
+  }
+  
+  /* Estilo para el botón de quitar */
+  .cart-modal-content button {
+    background-color: #f44336; /* Rojo para quitar */
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .cart-modal-content button:hover {
+    background-color: #d32f2f; /* Rojo oscuro */
+  }
+  
+  /* Estilos para los productos */
+  .product-list {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los productos se ajusten a varias filas */
+    justify-content: center; /* Centra los productos */
+    gap: 20px; /* Espacio entre productos */
+  }
+  
+  .product {
+    width: 200px; /* Ancho fijo para los productos */
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .product h3 {
+    margin: 10px 0;
+  }
+  
+  .product p {
+    margin-bottom: 10px;
+  }
+  
+  .product button {
+    background-color: #ff6347;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .product button:hover {
+    background-color: #ff4500;
+  }
+  
